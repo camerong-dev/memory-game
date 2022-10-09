@@ -20,5 +20,15 @@
 .card {
     height: 175px;
     width: 125px;
-    background-color: black;
+    background-color: rgb(40, 175, 238);
+    overflow: hidden;
+}
+
+.back-side {
+    width: 165px;
+    height: 105px;
+    transform: rotate(270deg);
+    margin-top: 35px;
+    margin-right: 10px;
+    display: flex;
 }
