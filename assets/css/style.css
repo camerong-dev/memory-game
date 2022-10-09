@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+body {
+    background-color: #DAF0EA;
+    color: #3E8B7C;
+    font-family: Nunito, sans-serif;
+}
+
+h1 {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    clear: both;
+}
+
 .timer-flips-area {
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .flips {
-    margin: 0 auto;
+    float: right;
 }
 
 .game-area {
@@ -22,6 +43,7 @@
     width: 125px;
     background-color: rgb(40, 175, 238);
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .back-side {
