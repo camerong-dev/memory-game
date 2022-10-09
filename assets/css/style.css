@@ -1,0 +1,24 @@
+.timer-flips-area {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flips {
+    margin: 0 auto;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 15px;
+    width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card {
+    height: 175px;
+    width: 125px;
+    background-color: black;
+}
