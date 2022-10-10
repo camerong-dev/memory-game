@@ -11,19 +11,21 @@ function flipCard() {
     if (!cardFlipped) {
         cardFlipped = true;
         firstChoice = this;
-
-        return;
+    } else {
+        cardFlipped = false;
+        secondChoice = this;
+    
+        if (firstChoice.dataset.cardid === secondChoice.dataset.cardid) {
+        firstChoice.removeEventListener('click', flipCard);
+        secondChoice.removeEventListener('click', flipCard);
+        } else {
+            setTimeout(() => {
+            firstChoice.classList.remove('flip');
+            secondChoice.classList.remove('flip');
+        } , 1750);
     }
-
-    secondChoice = this;
-
-    check();
-}
-
-function check() {
-    let match = firstChoice === secondChoice;
-
-    console.log('match');
+        
+    }
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard) )
