@@ -46,6 +46,7 @@ h1 {
     border-radius: 5px;
 }
 
+
 .back-side {
     width: 165px;
     height: 105px;
@@ -53,6 +54,15 @@ h1 {
     margin-top: 35px;
     margin-right: 10px;
     display: flex;
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
 }
 
 .back-card:hover {
@@ -74,3 +84,5 @@ h1 {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+
