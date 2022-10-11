@@ -59,7 +59,6 @@ h1 {
     backface-visibility: hidden;
 }
 
-
 .card:active {
     transform: scale(0.97);
     transition: transform .2s;

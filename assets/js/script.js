@@ -11,22 +11,37 @@ function flipCard() {
     if (!cardFlipped) {
         cardFlipped = true;
         firstChoice = this;
-    } else {
-        cardFlipped = false;
-        secondChoice = this;
+
+        return;
+
+    } 
+
+        
     
-        if (firstChoice.dataset.cardid === secondChoice.dataset.cardid) {
-        firstChoice.removeEventListener('click', flipCard);
-        secondChoice.removeEventListener('click', flipCard);
-        } else {
-            setTimeout(() => {
+    function check() {
+        let match = firstChoice.dataset.cardid  === secondChoice.dataset.cardid;
+
+            if (match === freezeCard)
+                freezeCard();
+
+            else 
+                revertCard();
+    }
+    
+    function revertCard() {
+        setTimeout(() => {
             firstChoice.classList.remove('flip');
             secondChoice.classList.remove('flip');
-        } , 1750);
+        } , 1250);
     }
         
+    function freezeCard() {
+        firstChoice.removeEventListener('click', flipcard);
+        secondChoice.removeEventListener('click', flipcard);
     }
-}
+            
+    }
+
 
 cards.forEach(card => card.addEventListener('click', flipCard) )
 
