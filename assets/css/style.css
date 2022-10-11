@@ -44,7 +44,6 @@ h1 {
     height: 175px;
     width: 125px;
     border-radius: 5px;
-    background-color: rgb(40, 175, 238);
 }
 
 .card-area {
@@ -53,7 +52,6 @@ h1 {
     display: flex;
     overflow: hidden;
     position: absolute;
-    backface-visibility: hidden;
     
 }
 
@@ -67,7 +65,11 @@ h1 {
 }
 
 .card-front {
-    
+    background-color: rgb(40, 175, 238);
+}
+
+.card-back {
+    background-color: rgb(40, 175, 238);
 }
 
 .car {
@@ -81,5 +83,8 @@ h1 {
 
 .logo {
     position: absolute;
-
+    width: 100%;
+    margin-top: 35px;
+    align-items: center;
+    text-align: center;
 }
