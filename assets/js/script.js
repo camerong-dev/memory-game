@@ -1,12 +1,14 @@
-let cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card');
 
 let cardFlipped = false;
+let freezeGame = false;
 let firstChoice, secondChoice;
 
 function flipCard() {
+    if (freezeGame) return;
     if (this === firstChoice) return;
 
-    this.classList.add('flip');
+    this.classList.add('flipped');
 
     if (!cardFlipped) {
         cardFlipped = true;
@@ -23,7 +25,7 @@ function flipCard() {
         
     
     function check() {
-        let match = firstChoice.dataset.cardid  === secondChoice.dataset.cardid;
+        let match = firstChoice.dataset.manufacturer  === secondChoice.dataset.manufacturer;
 
         match ? freezeCard() : revertCard();
     }
@@ -31,13 +33,23 @@ function flipCard() {
     function freezeCard() {
         firstChoice.removeEventListener('click', flipCard);
         secondChoice.removeEventListener('click', flipCard);
+
+        deIce();
     }
     
     function revertCard() {
+        freezeGame = true;
+
         setTimeout(() => {
-            firstChoice.classList.remove('flip');
-            secondChoice.classList.remove('flip');
+            firstChoice.classList.remove('flipped');
+            secondChoice.classList.remove('flipped');
+            deIce();
         } , 1250);
+    }
+
+    function deIce() {
+        [flipCard, freezeGame] = [false, false];
+        [firstChoice, secondChoice] = [null, null];
     }
         
    
