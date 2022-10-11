@@ -59,13 +59,24 @@ h1 {
     backface-visibility: hidden;
 }
 
+.front-card {
+    backface-visibility: hidden;
+}
+
+.front-side {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    backface-visibility: hidden;
+}
+
 .card:active {
     transform: scale(0.97);
     transition: transform .2s;
 }
 
 .card.flip {
-    transform: rotateY(180deg);
+    transform: rotateY(90deg);
 }
 
 .back-card:hover {

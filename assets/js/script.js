@@ -6,7 +6,7 @@ let firstChoice, secondChoice;
 function flipCard() {
     if (this === firstChoice) return;
 
-    this.classList.toggle('flip');
+    this.classList.add('flip');
 
     if (!cardFlipped) {
         cardFlipped = true;
@@ -16,16 +16,21 @@ function flipCard() {
 
     } 
 
+    secondChoice = this;
+    check();
+}
+
         
     
     function check() {
         let match = firstChoice.dataset.cardid  === secondChoice.dataset.cardid;
 
-            if (match === freezeCard)
-                freezeCard();
+        match ? freezeCard() : revertCard();
+    }
 
-            else 
-                revertCard();
+    function freezeCard() {
+        firstChoice.removeEventListener('click', flipCard);
+        secondChoice.removeEventListener('click', flipCard);
     }
     
     function revertCard() {
@@ -35,13 +40,9 @@ function flipCard() {
         } , 1250);
     }
         
-    function freezeCard() {
-        firstChoice.removeEventListener('click', flipcard);
-        secondChoice.removeEventListener('click', flipcard);
-    }
+   
             
-    }
+
 
 
 cards.forEach(card => card.addEventListener('click', flipCard) )
-
