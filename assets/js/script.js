@@ -59,5 +59,14 @@ function flipCard() {
         [cardFlipped, freezeGame] = [false, false];
         [firstChoice, secondChoice] = [null, null];
     }
-       
+
+// Randomizes cards every time page is refreshed
+
+    (function randomize() {
+        cards.forEach(card => {
+            let shuffle = Math.floor(Math.random() * 16)
+            card.style.order = shuffle;
+        });
+    })();
+
     cards.forEach(card => card.addEventListener('click', flipCard) )
