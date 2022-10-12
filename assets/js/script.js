@@ -7,7 +7,7 @@ let firstChoice, secondChoice;
 function flipCard() {
     if (freezeGame) return;
     if (this === firstChoice) return;
-
+    
     this.classList.add('flipped');
 
     if (!cardFlipped) {
@@ -48,13 +48,8 @@ function flipCard() {
     }
 
     function deIce() {
-        [flipCard, freezeGame] = [false, false];
+        [cardFlipped, freezeGame] = [false, false];
         [firstChoice, secondChoice] = [null, null];
     }
-        
-   
-            
-
-
-
-cards.forEach(card => card.addEventListener('click', flipCard) )
+       
+    cards.forEach(card => card.addEventListener('click', flipCard) )
