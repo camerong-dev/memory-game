@@ -17,8 +17,18 @@ h1 {
     margin-bottom: 20px;
 }
 
-.reset-button {
+.btn {
     margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(42, 187, 245);
+}
+
+.reset-button{
     text-align: center;
 }
 
@@ -148,7 +158,7 @@ h1 {
 }
 
 .infiniti-logo {
-    transform:translateX(-5px) scale(1.6) rotateY(180deg);
+    transform: scale(1.6) translateX(-9px) rotateY(180deg);
     margin-left: 11px;
     margin-top: 55px;
 }
@@ -200,7 +210,7 @@ h1 {
 
 @media screen and (max-width: 450px) {
     .game-area {
-        transform: translateY(-110px) scale(0.72);
+        transform: translateY(-90px) scale(0.72);
     }
 
     .reset-button {
@@ -216,11 +226,15 @@ h1 {
     }
     
     .game-area {
-        transform: translateY(-210px) scale(0.6);
+        transform: translateY(-120px) scale(0.6);
+    }
+
+    .btn {
+        font-size: 15px;
     }
 
     .reset-button {
-        transform: translateY(-270px);
+        transform: translateY(-260px);
     }
 }
 
@@ -229,13 +243,10 @@ h1 {
 
 @media screen and (max-width: 300px) {
     .game-area {
-        transform: translateY(-330px) scale(0.5);
+        transform: translateY(-160px) scale(0.5);
     }
 
     .reset-button {
         transform: translateY(-340px);
     }
 }
-
-
-
