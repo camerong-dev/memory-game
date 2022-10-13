@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+// Code has been taken from an online tutorial but modified to match my class's and ID's
+
 const cards = document.querySelectorAll('.card');
 
 let cardFlipped = false;

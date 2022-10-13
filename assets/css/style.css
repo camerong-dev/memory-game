@@ -60,6 +60,8 @@ h1 {
     
 }
 
+/* Taken from - https://www.w3schools.com/howto/howto_css_shake_image.asp */
+
 .card:hover .car {
     animation: shake 0.5s;
 
@@ -79,6 +81,9 @@ h1 {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+/* Flip transition influenced by https://github.com/portexe/Mix-Or-Match/blob/master/styles.css & 
+   https://github.com/code-sketch/memory-game/blob/master/video-11/styles.css */
 
 .card:active {
     transform: scale(0.97);
