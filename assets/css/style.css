@@ -37,7 +37,7 @@ h1 {
     height: 175px;
     width: 125px;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(42, 187, 245);
     
 }
 
@@ -91,13 +91,18 @@ h1 {
 
 .car {
     position: absolute;
-    width: 165px;
-    height: 105px;
-    transform: rotate(270deg);
-    margin-top: 35px;
-    margin-right: 10px;
+    width: 120px;
+    height: 75px;
+    margin-top: 100px;
+    margin-left: 3px;
     backface-visibility: hidden;
     
+}
+
+.sun {
+    width:100px;
+    height:100px;
+    transform:translate(82px, -38px);
 }
 
 .logo {
@@ -114,6 +119,43 @@ h1 {
     margin:0 auto;
     margin-top: 40px;
     scale: 110%;
+}
+
+.mini-logo {
+    width: 85%;
+    scale: 115%;
+    margin-left: 9px;
+    margin-top: 60px;
+}
+
+.mazda-logo {
+    scale: 85%;
+}
+
+.vw-logo {
+    scale: 90%;
+    margin-top: 25px;
+}
+
+.honda-logo {
+    scale: 90%;
+    margin-top: 30px;
+}
+
+.subaru-logo {
+    scale: 95%;
+    margin-top: 50px;
+}
+
+.infiniti-logo {
+    scale: 160%;
+    transform:translateX(-5px);
+    margin-left: 11px;
+    margin-top: 55px;
+}
+
+.renault-logo {
+    margin-top: 25px
 }
 
 
