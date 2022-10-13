@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const cards = document.querySelectorAll('.card');
 
 let cardFlipped = false;
@@ -64,9 +66,9 @@ function flipCard() {
 
     (function randomize() {
         cards.forEach(card => {
-            let shuffle = Math.floor(Math.random() * 16)
+            let shuffle = Math.floor(Math.random() * 16);
             card.style.order = shuffle;
         });
     })();
 
-    cards.forEach(card => card.addEventListener('click', flipCard) )
+    cards.forEach(card => card.addEventListener('click', flipCard) );
