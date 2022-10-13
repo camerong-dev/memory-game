@@ -109,6 +109,12 @@ h1 {
     transform: rotateY(180deg);
 }
 
+.holden-logo {
+    width:100%;
+    margin:0 auto;
+    margin-top: 40px;
+    scale: 110%;
+}
 
 
 
