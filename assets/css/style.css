@@ -70,11 +70,18 @@ h1 {
 
 .card.flipped .card-back {
     transform: rotateY(180deg);
+    display: none;
 }
 
 .card.flipped .card-front {
     transform: rotateY(-180deg);
+    display: block;
 }
+
+.card .card-front {
+    display:none;
+}
+
 
 
 
