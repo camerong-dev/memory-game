@@ -9,7 +9,7 @@ body {
 
 h1 {
     margin: 0 auto;
-    width: 300px;
+    width: 100%;
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
@@ -118,38 +118,37 @@ h1 {
     width:100%;
     margin:0 auto;
     margin-top: 40px;
-    scale: 110%;
+    transform: scale(1.1) rotateY(180deg);
 }
 
 .mini-logo {
     width: 85%;
-    scale: 115%;
+    transform: scale(1.15) rotateY(180deg);
     margin-left: 9px;
     margin-top: 60px;
 }
 
 .mazda-logo {
-    scale: 85%;
+    transform: scale(0.85) rotateY(180deg);
 }
 
 .vw-logo {
-    scale: 90%;
+    transform: scale(0.9) rotateY(180deg);
     margin-top: 25px;
 }
 
 .honda-logo {
-    scale: 90%;
+    transform: scale(0.9);
     margin-top: 30px;
 }
 
 .subaru-logo {
-    scale: 95%;
+    transform: scale(0.95);
     margin-top: 50px;
 }
 
 .infiniti-logo {
-    scale: 160%;
-    transform:translateX(-5px);
+    transform:translateX(-5px) scale(1.6) rotateY(180deg);
     margin-left: 11px;
     margin-top: 55px;
 }
@@ -162,17 +161,16 @@ h1 {
 
 @media screen and (max-width: 650px) {
     .game-area {
-        scale: 95%;
         grid-gap: 10px;
-        transform: translateY(-20px);
+        transform: translateY(-20px) scale(0.95);
     }
 
     .card {
-        scale: 95%
+        transform: scale(0.95);
     }
 
     .reset-button {
-        transform: translateY(-25px)
+        transform: translateY(-25px);
     }
 }
 
@@ -185,13 +183,12 @@ h1 {
     }
     
     .game-area {
-        scale: 85%;
         grid-gap: 0px;
-        transform: translateY(-40px)
+        transform: translateY(-40px) scale(0.85);
     }
 
     .card {
-        scale: 90%
+        transform: scale(0.9);
     }
 
     .reset-button {
@@ -203,8 +200,7 @@ h1 {
 
 @media screen and (max-width: 450px) {
     .game-area {
-        scale: 72%;
-        transform: translateY(-110px);
+        transform: translateY(-110px) scale(0.72);
     }
 
     .reset-button {
@@ -220,8 +216,7 @@ h1 {
     }
     
     .game-area {
-        scale: 60%;
-        transform: translateY(-210px);
+        transform: translateY(-210px) scale(0.6);
     }
 
     .reset-button {
@@ -234,8 +229,7 @@ h1 {
 
 @media screen and (max-width: 300px) {
     .game-area {
-        scale: 50%;
-        transform: translateY(-330px);
+        transform: translateY(-330px) scale(0.5);
     }
 
     .reset-button {
