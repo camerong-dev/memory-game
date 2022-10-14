@@ -88,7 +88,7 @@ The sit was deployed to GitHub pages.
   3. Under source, select branch ‘master’ and then click ‘save’
   4. The page will now automatically refresh and show a detailed ribbon display to indicate deployment
   
-  
+  ![Image of settings tab in GitHub](assets/readme-images/settings-tab-mg.jpg)
   
 ### To create a Local Copy
 
@@ -99,7 +99,7 @@ The sit was deployed to GitHub pages.
   5. Type 'git clone' and then paste the URL copied from GitHub
   6. Press enter and then the local clone will be created 
   
-  
+  ![Image of clone box in GitHub](assets/readme-images/local-copy-mg.jpg)
   
 ## Credits
 
