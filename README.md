@@ -110,7 +110,7 @@ The sit was deployed to GitHub pages.
     
   ### Code 
   
-   - Followed tutorial for JavaScript code found [here] and modified to match my ID's and Classes (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s)
+   - Followed tutorial for JavaScript code found [here](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s) and modified to match my ID's and Classes 
    - Followed tutorial for HTML div layout and flip transition found [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=1561s)
    - Image shaking animation taken from [here](https://www.w3schools.com/howto/howto_css_shake_image.asp)
    - Help received debugging JavaScript from work colleagues 
