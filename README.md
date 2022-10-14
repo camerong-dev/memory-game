@@ -34,6 +34,7 @@ The only font I used was imported into style.css from [google fonts](https://fon
 ![Image of 4x4 grid](assets/readme-images/4x4-grid.jpg)
 
 - Reset button at the bottom of the page which allows the user to reset upon completing the game.
+
 ![Image of Reset Button](assets/readme-images/reset-button.jpg)
 
 ## Future Features
@@ -92,7 +93,7 @@ The sit was deployed to GitHub pages.
   
 ### To create a Local Copy
 
-   1. Under the repository name, click on the 'code' tab
+  1. Under the repository name, click on the 'code' tab
   2. In your clone box, HTTPS tab, click on the clipboard icon
   3. In your IED open GitBash
   4. Chang the current working directory to the location you wish the cloned directory to be made
@@ -105,11 +106,11 @@ The sit was deployed to GitHub pages.
 
   ### Media
   
-    Images were found online from royalty free sources.
+   - Images were found online from royalty free sources.
     
   ### Code 
   
-    Followed tutorial for JavaScript code found [here] and modified to match my ID's and Classes (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s)
-    Followed tutorial for HTML div layout and flip transition found [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=1561s)
-    Image shaking animation taken from [here](https://www.w3schools.com/howto/howto_css_shake_image.asp)
-    Help received debugging JavaScript from work colleagues 
+   - Followed tutorial for JavaScript code found [here] and modified to match my ID's and Classes (https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s)
+   - Followed tutorial for HTML div layout and flip transition found [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=1561s)
+   - Image shaking animation taken from [here](https://www.w3schools.com/howto/howto_css_shake_image.asp)
+   - Help received debugging JavaScript from work colleagues 
