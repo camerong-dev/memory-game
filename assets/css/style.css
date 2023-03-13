@@ -158,7 +158,7 @@ h1 {
 }
 
 .subaru-logo {
-    transform: scale(0.95);
+    transform: scale(0.95) rotateY(180deg);
     margin-top: 50px;
 }
 
