@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-// Code has been taken from an online tutorial but modified to match my class's and ID's
+// Functions flipCard, check, freezeCard, revertCard and deIce were taken from online tutorial
 
 const cards = document.querySelectorAll('.card');
 
@@ -26,6 +26,7 @@ function flipCard() {
 
     secondChoice = this;
     check();
+    checkWin();
 }
 
 // Function looks to see if 1st and 2nd choice match. If match it calls upon freezeCard, if not revertCard is called        
@@ -62,6 +63,19 @@ function flipCard() {
     function deIce() {
         [cardFlipped, freezeGame] = [false, false];
         [firstChoice, secondChoice] = [null, null];
+    }
+
+// Checks if all cards have flipped class, if so then alert appears
+    function checkWin() {
+        let matched = true;
+        cards.forEach(card => {
+            if (!card.classList.contains('flipped')) {
+                matched = false;
+            }
+        });
+        if (matched) {
+            alert("You won!");
+        }
     }
 
 // Randomizes cards every time page is refreshed
