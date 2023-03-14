@@ -3,10 +3,13 @@
 // Functions flipCard, check, freezeCard, revertCard and deIce were taken from online tutorial
 
 const cards = document.querySelectorAll('.card');
+const time = document.querySelectorAll('.timer');
 
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
+let timeLeft = 120;
+let timeId;
 
 // Function checks to see if it is 1st or 2nd click.  If 1st, no further action. If 2nd, check function is called
 
@@ -88,3 +91,18 @@ function flipCard() {
     })();
 
     cards.forEach(card => card.addEventListener('click', flipCard) );
+
+// Countdown timer
+
+    function countdown() {
+        if (timeLeft == 0) {
+            clearInterval(timeId);
+            alert("Game Over! You ran out of time.");
+        }
+        else {
+            timeLeft--;
+            time.textContent = 'Remaining time: ${timeLeft} seconds';
+        }
+    }
+
+timeId = setInterval(countdown, 1000);
