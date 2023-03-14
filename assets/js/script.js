@@ -3,7 +3,7 @@
 // Functions flipCard, check, freezeCard, revertCard and deIce were taken from online tutorial
 
 const cards = document.querySelectorAll('.card');
-const time = document.querySelectorAll('.timer');
+var time = document.getElementById('timer');
 
 let cardFlipped = false;
 let freezeGame = false;
@@ -98,11 +98,19 @@ function flipCard() {
         if (timeLeft == 0) {
             clearInterval(timeId);
             alert("Game Over! You ran out of time.");
-        }
+        } 
         else {
-            timeLeft--;
-            time.textContent = 'Remaining time: ${timeLeft} seconds';
+            updateCountdown(timeLeft);
         }
     }
 
-timeId = setInterval(countdown, 1000);
+    function updateCountdown(timeLeft) {
+        time.textContent = `Time Remaining: ${timeLeft} seconds`;
+    }
+
+    timeId = setInterval(() => {
+        timeLeft--;
+        updateCountdown();
+        countdown();
+    },
+    1000);
