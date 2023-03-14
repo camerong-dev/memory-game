@@ -8,7 +8,7 @@ var time = document.getElementById('timer');
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
-let timeLeft = 120;
+let timeLeft = 10;
 let timeId;
 
 // Function checks to see if it is 1st or 2nd click.  If 1st, no further action. If 2nd, check function is called
@@ -103,6 +103,8 @@ function flipCard() {
             updateCountdown(timeLeft);
         }
     }
+
+// Updates the remaining time which the end user sees    
 
     function updateCountdown(timeLeft) {
         time.textContent = `Time Remaining: ${timeLeft} seconds`;
