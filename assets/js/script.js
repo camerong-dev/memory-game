@@ -4,12 +4,37 @@
 
 const cards = document.querySelectorAll('.card');
 var time = document.getElementById('timer');
+const startBtn = document.getElementById('start-game');
 
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
 let timeLeft = 10;
 let timeId;
+
+// Function to hide the overlay
+
+function hideOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+}
+
+
+// Start game button starts the timer and calls hide overlay function
+
+
+function startGame() {
+    hideOverlay()
+    timeId = setInterval(() => {
+        timeLeft--;
+        updateCountdown();
+        countdown();
+    },
+    1000);
+}
+
+
+startBtn.addEventListener('click', startGame);
+
 
 // Function checks to see if it is 1st or 2nd click.  If 1st, no further action. If 2nd, check function is called
 
@@ -92,6 +117,7 @@ function flipCard() {
 
     cards.forEach(card => card.addEventListener('click', flipCard) );
 
+
 // Countdown timer
 
     function countdown() {
@@ -110,9 +136,3 @@ function flipCard() {
         time.textContent = `Time Remaining: ${timeLeft} seconds`;
     }
 
-    timeId = setInterval(() => {
-        timeLeft--;
-        updateCountdown();
-        countdown();
-    },
-    1000);
