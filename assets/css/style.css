@@ -30,6 +30,7 @@ ul {
     list-style-type: none;
     margin: 0 auto;
     text-align: left;
+    font-size: 25px;
 }
 
 #game-over {
@@ -249,7 +250,35 @@ h3 {
     margin-top: 25px
 }
 
-/* For screens from 650px down */
+/* For screen from 900px height down */
+@media screen and (max-height: 900px) {
+    #start-overlay {
+        width: 530px;
+        height: 100%;
+    }
+    #game-over {
+        width: 530px;
+        height: 100%;
+    }
+    #winner {
+        width: 530px;
+        height: 100%;
+    }
+    .game-area {
+        grid-gap: 10px;
+        transform: translateY(-20px) scale(0.95);
+    }
+
+    .card {
+        transform: scale(0.95);
+    }
+
+    #reset-btn {
+        transform: translateY(-35px);
+    }
+}
+
+/* For screens from 650px width down */
 
 @media screen and (max-width: 650px) {
     #start-overlay {
@@ -273,14 +302,15 @@ h3 {
         transform: scale(0.95);
     }
 
-    .reset-button {
+    #reset-btn {
         transform: translateY(-25px);
     }
 }
 
-/* For screens from 550px down */
+/* For screens from 550px width down or 850px height */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px),
+                (max-height: 850px) {
     h1 {
         font-size: 35px;
         margin-bottom: 0;
@@ -324,7 +354,7 @@ h3 {
     }
 }
 
-/* For screens from 450px down */
+/* For screens from 450px width down */
 
 @media screen and (max-width: 450px) {
     #start-overlay {
@@ -360,11 +390,16 @@ h3 {
     }
 }
 
-/* For screens from 375px down */
+/* For screens from 375px width down or 600px height */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px),
+                    (max-height: 600px) {
     h1 {
         font-size: 25px;
+    }
+
+    .countdown {
+        font-size: 15px;
     }
 
     #start-overlay {
@@ -404,7 +439,7 @@ h3 {
     }
 }
 
-/* For screens from 300px down */
+/* For screens from 300px width down */
 
 
 @media screen and (max-width: 300px) {
