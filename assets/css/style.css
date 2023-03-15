@@ -53,8 +53,11 @@ h1 {
     background-color: rgb(42, 187, 245);
 }
 
-.reset-button{
+#reset-btn{
+    margin: 0 auto;
+    justify-content: center;
     text-align: center;
+    display: none;
 }
 
 .game-area {
@@ -243,7 +246,7 @@ h1 {
         transform: scale(0.9);
     }
 
-    .reset-button {
+    #reset-btn {
         transform: translateY(-80px);
     }
 }
@@ -263,7 +266,7 @@ h1 {
         transform: translateY(-90px) scale(0.72);
     }
 
-    .reset-button {
+    #reset-btn {
         transform: translateY(-175px);
     }
 }
@@ -291,7 +294,7 @@ h1 {
         font-size: 15px;
     }
 
-    .reset-button {
+    #reset-btn {
         transform: translateY(-260px);
     }
 }
@@ -312,7 +315,7 @@ h1 {
         transform: translateY(-160px) scale(0.5);
     }
 
-    .reset-button {
+    #reset-btn {
         transform: translateY(-340px);
     }
 }

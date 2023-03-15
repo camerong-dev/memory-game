@@ -18,12 +18,19 @@ function hideOverlay() {
     document.getElementById('overlay').style.display = 'none';
 }
 
+// Function to show the reset button when game starts
+
+function showReset() {
+    document.getElementById('reset-btn').style.display = 'flex';
+}
+
 
 // Start game button starts the timer and calls hide overlay function
 
 
 function startGame() {
     hideOverlay()
+    showReset()
     timeId = setInterval(() => {
         timeLeft--;
         updateCountdown();
