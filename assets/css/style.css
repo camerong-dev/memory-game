@@ -36,7 +36,6 @@ body {
     width: 555px;
     height: 100%;
     z-index: 999;
-    display: none;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
     align-items: center;
@@ -54,7 +53,6 @@ body {
     width: 555px;
     height: 100%;
     z-index: 999;
-    display: none;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.8);
     align-items: center;
@@ -76,9 +74,8 @@ h3 {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     clear: both;
-    margin-bottom: 20px;
 }
 
 #timer {

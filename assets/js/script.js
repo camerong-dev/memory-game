@@ -16,12 +16,19 @@ let timeId;
 
 function hideOverlay() {
     document.getElementById('start-overlay').style.display = 'none';
+    document.getElementById('game-over').style.display = 'none';
 }
 
-// Function to show the reset button when game starts
+// Function to show the reset button 
 
 function showReset() {
     document.getElementById('reset-btn').style.display = 'flex';
+}
+
+// Function to hide reset button 
+
+function hideReset() {
+    document.getElementById('reset-btn').style.display = 'none';
 }
 
 // Function shows game over overlay if time runs out
@@ -36,9 +43,7 @@ function gameWin() {
     document.getElementById('winner').style.display = 'flex';
 }
 
-
 // Start game button starts the timer and calls hide overlay function
-
 
 function startGame() {
     hideOverlay()
@@ -123,6 +128,7 @@ function flipCard() {
         if (matched) {
             clearInterval(timeId);
             gameWin();
+            hideReset();
         }
     }
 
@@ -156,6 +162,7 @@ function flipCard() {
     function updateCountdown(timeLeft) {
         if (timeLeft == 0) {
             time.textContent = `Time's Up!`;
+            hideReset();
         }
         else {
             time.textContent = `Time Remaining: ${timeLeft} seconds`;
