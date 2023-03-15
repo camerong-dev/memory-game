@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-// Functions flipCard, check, freezeCard, revertCard and deIce were taken from online tutorial
+// Functions flipCard, check, freezeCard, revertCard and deIce were taken from online tutorial referenced in README.md
 
 const cards = document.querySelectorAll('.card');
 var time = document.getElementById('timer');
@@ -9,19 +9,31 @@ const startBtn = document.getElementById('start-game');
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
-let timeLeft = 10;
+let timeLeft = 120;
 let timeId;
 
 // Function to hide the overlay
 
 function hideOverlay() {
-    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('start-overlay').style.display = 'none';
 }
 
 // Function to show the reset button when game starts
 
 function showReset() {
     document.getElementById('reset-btn').style.display = 'flex';
+}
+
+// Function shows game over overlay if time runs out
+
+function gameOver() {
+    document.getElementById('game-over').style.display = 'flex';
+}
+
+// Function shows winner overlay if user wins
+
+function gameWin() {
+    document.getElementById('winner').style.display = 'flex';
 }
 
 
@@ -109,7 +121,8 @@ function flipCard() {
             }
         });
         if (matched) {
-            alert("You won!");
+            clearInterval(timeId);
+            gameWin();
         }
     }
 
@@ -130,7 +143,7 @@ function flipCard() {
     function countdown() {
         if (timeLeft == 0) {
             clearInterval(timeId);
-            alert("Game Over! You ran out of time.");
+            gameOver();
         } 
         else {
             updateCountdown(timeLeft);

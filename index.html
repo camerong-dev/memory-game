@@ -16,11 +16,21 @@
     <h1 class="page-title">Memory Game</h1>
     <h3 id="timer"></h3>
 
+    
+
+    
+
 <!--Div structure is same as https://github.com/portexe/Mix-Or-Match/blob/master/index.html -->
     <div class="game-area">
-        <div id="overlay">
-            <button id="start-game">Start Game</button>
+
+        <div id="start-overlay">
+            <button id="start-game" class="btn">Start Game</button>
         </div>
+
+        <div id="game-over" style="display: none;"></div>
+
+        <div id="winner" style="display: none;"></div>
+        
             <div class="card" data-manufacturer="holden">
                 <div class="card-back card-area">
                     <img class="car" src="assets/images/back-card-image.png" alt="Cartoon car representing
@@ -196,6 +206,8 @@
                     <img class="logo mazda-logo" src="assets/images/mazda-logo.png" alt="Mazda car logo">   
                 </div>
             </div>
+
+            
     </div>
 
     <div id="reset-btn">
@@ -203,8 +215,6 @@
             Reset
         </button>
     </div>
-
-
 
     <script src="assets/js/script.js" defer></script>
     
