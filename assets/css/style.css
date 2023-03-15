@@ -8,17 +8,23 @@ body {
 }
 
 #overlay {
+    margin: 0 auto;
     position: absolute;
-    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 555px;
     height: 100%;
-    background-color: rgba(0, 147, 56, 0.9);
     z-index: 999;
     display: flex;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
     align-items: center;
     text-align: center;
     justify-content: center;
 }
+
 
 h1 {
     margin: 0 auto;
@@ -194,6 +200,10 @@ h1 {
 /* For screens from 650px down */
 
 @media screen and (max-width: 650px) {
+    #overlay {
+        width: 530px;
+        height: 100%;
+    }
     .game-area {
         grid-gap: 10px;
         transform: translateY(-20px) scale(0.95);
@@ -215,6 +225,14 @@ h1 {
         font-size: 35px;
         margin-bottom: 0;
     }
+
+    #overlay {
+        width: 500px;
+        height: 100%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
     
     .game-area {
         grid-gap: 0px;
@@ -233,6 +251,14 @@ h1 {
 /* For screens from 450px down */
 
 @media screen and (max-width: 450px) {
+    #overlay {
+        width: 500px;
+        height: 100%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
     .game-area {
         transform: translateY(-90px) scale(0.72);
     }
@@ -247,6 +273,14 @@ h1 {
 @media screen and (max-width: 375px) {
     h1 {
         font-size: 25px;
+    }
+
+    #overlay {
+        width: 500px;
+        height: 100%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
     }
     
     .game-area {
@@ -266,6 +300,14 @@ h1 {
 
 
 @media screen and (max-width: 300px) {
+    #overlay {
+        width: 500px;
+        height: 100%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
     .game-area {
         transform: translateY(-160px) scale(0.5);
     }
