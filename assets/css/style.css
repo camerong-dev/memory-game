@@ -26,6 +26,12 @@ body {
     justify-content: center;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: left;
+}
+
 #game-over {
     margin: 0 auto;
     position: absolute;

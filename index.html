@@ -24,14 +24,22 @@
     <div class="game-area">
 
         <div id="start-overlay">
-            <input type="radio" id="easy" name="difficulty" value="90">
-            <label for="easy">Easy Mode: 90 Seconds</label>
+            <ul class="time-selection">
+                <li>
+                    <input type="radio" id="easy" name="difficulty" value="90">
+                    <label for="easy">Easy Mode: 90 Seconds</label>
+                </li>
 
-            <input type="radio" id="med" name="difficulty" value="60">
-            <label for="med">Medium Mode: 60 Seconds</label>
+                <li>
+                    <input type="radio" id="med" name="difficulty" value="60">
+                    <label for="med">Medium Mode: 60 Seconds</label>
+                </li>
 
-            <input type="radio" id="hard" name="difficulty" value="45">
-            <label for="hard">Hard Mode: 30 Seconds</label>
+                <li>
+                    <input type="radio" id="hard" name="difficulty" value="30">
+                    <label for="hard">Hard Mode: 30 Seconds</label>
+                </li>
+            </ul>
 
             <button id="start-game" class="btn">Start Game</button>
         </div>

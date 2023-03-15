@@ -5,11 +5,12 @@
 const cards = document.querySelectorAll('.card');
 var time = document.getElementById('timer');
 const startBtn = document.getElementById('start-game');
+const radioBtns = document.getElementsByName('difficulty');
 
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
-let timeLeft = 100;
+let timeLeft;
 let timeId;
 
 // Function to hide the overlay
@@ -43,11 +44,24 @@ function gameWin() {
     document.getElementById('winner').style.display = 'flex';
 }
 
+// Finds the value of the selected radio button
+
+function getRadioValue() {
+    for (let i = 0; i < radioBtns.length; i++) {
+        if (radioBtns[i].checked) {
+            return radioBtns[i].value;
+        }
+    }
+    // Default value if no radio button is selected
+    return "90";
+}
+
 // Start game button starts the timer and calls hide overlay function
 
 function startGame() {
-    hideOverlay()
-    showReset()
+    hideOverlay();
+    showReset();
+    timeLeft = parseInt(getRadioValue());
     timeId = setInterval(() => {
         timeLeft--;
         updateCountdown();
