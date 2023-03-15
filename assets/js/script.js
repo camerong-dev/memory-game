@@ -9,7 +9,7 @@ const startBtn = document.getElementById('start-game');
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
-let timeLeft = 10;
+let timeLeft = 100;
 let timeId;
 
 // Function to hide the overlay

@@ -24,6 +24,15 @@
     <div class="game-area">
 
         <div id="start-overlay">
+            <input type="radio" id="easy" name="difficulty" value="90">
+            <label for="easy">Easy Mode: 90 Seconds</label>
+
+            <input type="radio" id="med" name="difficulty" value="60">
+            <label for="med">Medium Mode: 60 Seconds</label>
+
+            <input type="radio" id="hard" name="difficulty" value="45">
+            <label for="hard">Hard Mode: 30 Seconds</label>
+
             <button id="start-game" class="btn">Start Game</button>
         </div>
 
@@ -31,12 +40,16 @@
             <h3>
                 Game Over<br><br>Please try again!
                 <br>
-                <button id="start-game" class="btn" onclick="window.location.reload()">Restart</button>
+                <button class="btn" onclick="window.location.reload()">Restart</button>
             </h3>
         </div>
 
         <div id="winner" style="display: none;">
-            <h3>You Won! :D </h3>
+            <h3>
+                Congratulations! <br><br>You Won!
+                <br>
+                <button class="btn" onclick="window.location.reload()">Play Again</button>
+                </h3>
         </div>
         
             <div class="card" data-manufacturer="holden">
