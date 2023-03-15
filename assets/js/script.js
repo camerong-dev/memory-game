@@ -9,7 +9,7 @@ const startBtn = document.getElementById('start-game');
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
-let timeLeft = 120;
+let timeLeft = 10;
 let timeId;
 
 // Function to hide the overlay
@@ -144,6 +144,7 @@ function flipCard() {
         if (timeLeft == 0) {
             clearInterval(timeId);
             gameOver();
+            updateCountdown(0);
         } 
         else {
             updateCountdown(timeLeft);
@@ -153,6 +154,11 @@ function flipCard() {
 // Updates the remaining time which the end user sees    
 
     function updateCountdown(timeLeft) {
-        time.textContent = `Time Remaining: ${timeLeft} seconds`;
+        if (timeLeft == 0) {
+            time.textContent = `Time's Up!`;
+        }
+        else {
+            time.textContent = `Time Remaining: ${timeLeft} seconds`;
+        }
     }
 
