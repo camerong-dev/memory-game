@@ -6,12 +6,14 @@ const cards = document.querySelectorAll('.card');
 var time = document.getElementById('timer');
 const startBtn = document.getElementById('start-game');
 const radioBtns = document.getElementsByName('difficulty');
+var counter = document.getElementById('flips');
 
 let cardFlipped = false;
 let freezeGame = false;
 let firstChoice, secondChoice;
 let timeLeft;
 let timeId;
+let clicks = 0;
 
 // Function to hide the overlay
 
@@ -42,9 +44,10 @@ function gameOver() {
 
 function gameWin() {
     document.getElementById('winner').style.display = 'flex';
+    counter.textContent = `You completed it in: ${clicks} flips!`
 }
 
-// Finds the value of the selected radio button
+// Loop through the radio button group and returns value of selected button. 
 
 function getRadioValue() {
     for (let i = 0; i < radioBtns.length; i++) {
@@ -91,6 +94,7 @@ function flipCard() {
     } 
 
     secondChoice = this;
+    clicks++;
     check();
     checkWin();
 }
