@@ -56,7 +56,7 @@ function getRadioValue() {
         }
     }
     // Default value if no radio button is selected
-    return "90";
+    return "60";
 }
 
 // Start game button starts the timer and calls hide overlay function
