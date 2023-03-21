@@ -44,7 +44,7 @@ function gameOver() {
 
 function gameWin() {
     document.getElementById('winner').style.display = 'flex';
-    counter.textContent = `You completed it in: ${clicks} flips!`
+    counter.textContent = `You completed it in: ${clicks} flips!`;
 }
 
 // Loop through the radio button group and returns value of selected button. 
