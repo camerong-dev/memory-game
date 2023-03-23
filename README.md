@@ -45,29 +45,29 @@ Once the user starts the game, they will see a 4x4 grid containing the cards.  O
 
 The timer is a key part of this game as it shows the user how long they have left to complete the game.  Depending on what mode they selected before starting the game, they will start the countdown from either 60, 40 or 20 seconds. If the timer runs out the user loses and is notified via an overlay. 
 
-![Image of timer](assests/readme-images/timer.jpg)
+![Image of timer](assets/readme-images/timer.jpg)
 
 ### Game Over Screen
 
 If the user is unable to complete the game within the given time, an overlay will appear over the game area making it inaccessible.  The user is prompted to select 'Restart' to play the game again. 
 
-![Image of game over screen](assests/readme-images/game-over.jpg)
+![Image of game over screen](assets/readme-images/game-over.jpg)
 
 ### Winner Screen
 
 If the user completes the game within the given time, an overlay will appear over the game area making it inaccessible. The user is shown how many flips it took them to complete the game.  The timer is also frozen at the point of winning the game and is still shown above the game area.  The user is prompted to select the 'Play Again' button to play once more.
 
-![Image of winner screen](assests/readme-images/win-overlay.jpg)
+![Image of winner screen](assets/readme-images/win-overlay.jpg)
 
 ### Reset
 
 During the game, if required the user can select the 'Reset' button found at the bottom of the page to restart the game and choose what mode they'd like to play.
 
-![Image of reset button](assests/readme-images/reset-button.jpg)
+![Image of reset button](assets/readme-images/reset-button.jpg)
 
 ## Future Features
 
-- A leaderboard of other users
+- A leaderboard of other users showing time taken and number of flips
 - Ability for users to upload own images to be used on the cards instead
 
 ## Testing
