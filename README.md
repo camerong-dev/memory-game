@@ -2,14 +2,14 @@
 
 Memory Game is a site that tests your memory by viewing cars and attempting to match them. 
 
-![Am I Responsive image of site](assets/readme-images/is-it-responsive-memory-game.jpg)
+![Am I Responsive image of site](assets/readme-images/am-i-responsive.jpg)
 
 ## Live Site
 [Memory Game](https://camerong-dev.github.io/memory-game/)
 
 ## Project Goals
 
-- Build a simple Memory Card game for users to easily interact with. Ensuring that different devices are able to play as well with no adverse affects.
+- Build a simple Memory Card game for users to easily interact with, with the user racing against the clock.  If time runs out they'll be notified and prompt to try again, but if they win they can see how many flips it took and how much time was left. 
 
 ## Site Structure
 
@@ -69,6 +69,10 @@ During the game, if required the user can select the 'Reset' button found at the
 
 - A leaderboard of other users showing time taken and number of flips
 - Ability for users to upload own images to be used on the cards instead
+
+## Known Issues
+
+- On mobile/tablet devices, after two cards have been selected and don't match. The last card will use the car animation as if the user was hovering over the card. It   is a minor cosmetic and does not affect any functionality of the game. 
 
 ## Testing
 
