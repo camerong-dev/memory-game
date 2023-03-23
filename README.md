@@ -82,7 +82,7 @@ During the game, if required the user can select the 'Reset' button found at the
   
 ### CSS Validation Testing
 
-  ![Image of CSS Validation result](assets/readme-images/css-validation-memory-game.jpg)
+  ![Image of CSS Validation result](assets/readme-images/css-validation-v2.jpg)
   
 ### JavaScript Validation Testing
 
@@ -90,7 +90,7 @@ During the game, if required the user can select the 'Reset' button found at the
   
 ### Colour Contrast Validation
 
-  ![Image of Colour Contrast Validation result](assets/readme-images/colour-contrast-memory-game.jpg)
+  ![Image of Colour Contrast Validation result](assets/readme-images/colour-contrast-accessibility-v2.jpg)
  
 ## Responsiveness
 
@@ -98,7 +98,7 @@ Responsive design tests were carried out manually using Google Chrome's built in
 
 The following were tested:
 
-  - iPhone 6/7/8/
+  - iPhone 6/7/8/XR/12 Pro
   - iPhone 6/7/8 Plus
   - Samsung Galaxy S8+
   - Samsung Galaxy S20 Ultra
