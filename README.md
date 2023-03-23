@@ -9,11 +9,11 @@ Memory Game is a site that tests your memory by viewing cars and attempting to m
 
 ## Project Goals
 
-- Build a front-end game with a simple UI for a user to interact with.
+- Build a simple Memory Card game for users to easily interact with. Ensuring that different devices are able to play as well with no adverse affects.
 
 ## Site Structure
 
-Memory Game is a single page site, with the page consisting of a 4x4 grid containing logos of car manufacturers. 
+Memory Game is a single page site, with the page consisting of a 4x4 grid of cards and a timer. 
 
 ## Colour Scheme
 
@@ -25,30 +25,56 @@ Final Colour Palette:
 
 ## Fonts
 
-The only font I used was imported into style.css from [google fonts](https://fonts.google.com/). Nunito was used for my h1 and button element for the simplistic appearance. Sans-serif was the backup due to the basic design, which would not seem out of place if it were present.
+The only font I used was imported into style.css from [google fonts](https://fonts.google.com/). Nunito was used for all elements of my page for the simplistic and clean appearance. Sans-serif was the backup due to the basic design, which would not seem out of place if it were present.
 
 ## Features
 
-- 4x4 grid containing all cards for the game. Upon clicking a card, the card will flip over displaying the front side. 
+### Start Screen
 
-![Image of 4x4 grid](assets/readme-images/4x4-grid.jpg)
+When user first loads or reloads the page they will be greeted with this overlay.  Here they will be able to select a mode, this will then dictate the time they'll have remaining to complete the game.  Once a mode has been selected the user will then press the 'Start' button to start playing.  If no mode is selected then it will automatically default to 'Easy Mode'.
 
-- Reset button at the bottom of the page which allows the user to reset upon completing the game.
+![Image of start screen](assets/readme-images/start-overlay.jpg)
 
-![Image of Reset Button](assets/readme-images/reset-button.jpg)
+### Game Area
+
+Once the user starts the game, they will see a 4x4 grid containing the cards.  On computers, hovering over a card will show a animation of the car shaking.  Selecting a card will cause it flip over showing the back side of the card.  The user will then be required to select another card, if matched they can flip another card straight away. Otherwise they will need to wait for the 2 cards to flip back over and then try again.
+
+![Image of game area](assets/readme-images/during-game.jpg)
+
+### Timer
+
+The timer is a key part of this game as it shows the user how long they have left to complete the game.  Depending on what mode they selected before starting the game, they will start the countdown from either 60, 40 or 20 seconds. If the timer runs out the user loses and is notified via an overlay. 
+
+![Image of timer](assets/readme-images/timer.jpg)
+
+### Game Over Screen
+
+If the user is unable to complete the game within the given time, an overlay will appear over the game area making it inaccessible.  The user is prompted to select 'Restart' to play the game again. 
+
+![Image of game over screen](assets/readme-images/game-over.jpg)
+
+### Winner Screen
+
+If the user completes the game within the given time, an overlay will appear over the game area making it inaccessible. The user is shown how many flips it took them to complete the game.  The timer is also frozen at the point of winning the game and is still shown above the game area.  The user is prompted to select the 'Play Again' button to play once more.
+
+![Image of winner screen](assets/readme-images/win-overlay.jpg)
+
+### Reset
+
+During the game, if required the user can select the 'Reset' button found at the bottom of the page to restart the game and choose what mode they'd like to play.
+
+![Image of reset button](assets/readme-images/reset-button.jpg)
 
 ## Future Features
 
-- Click to start game
-- Timer starting at 90 seconds
-- A running total of flipped cards
-- You won / lost notification
+- A leaderboard of other users showing time taken and number of flips
+- Ability for users to upload own images to be used on the cards instead
 
 ## Testing
 
 ### HTML Validation Testing
   
-  ![Image of index.html validation result](assets/readme-images/index-validation.jpg)
+  ![Image of index.html validation result](assets/readme-images/index-validation-v2.jpg)
   
 ### CSS Validation Testing
 
@@ -56,7 +82,7 @@ The only font I used was imported into style.css from [google fonts](https://fon
   
 ### JavaScript Validation Testing
 
-  ![Image of JavaScript Validation result](assets/readme-images/jshint-validation.jpg)
+  ![Image of JavaScript Validation result](assets/readme-images/js-validation-v2.jpg)
   
 ### Colour Contrast Validation
 
@@ -110,7 +136,14 @@ The sit was deployed to GitHub pages.
     
   ### Code 
   
-   - Followed tutorial for JavaScript code found [here](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s) and modified to match my ID's and Classes 
+   - Followed tutorial for JavaScript core functions found [here](https://www.youtube.com/watch?v=ZniVgo8U7ek&t=1809s). Within JS file I comment which functions have        been taken from this tutorial.
    - Followed tutorial for HTML div layout and flip transition found [here](https://www.youtube.com/watch?v=28VfzEiJgy4&t=1561s)
    - Image shaking animation taken from [here](https://www.w3schools.com/howto/howto_css_shake_image.asp)
    - Help received debugging JavaScript from work colleagues 
+
+  ### Resources 
+  
+   - [W3Schools](https://www.w3schools.com/js/default.asp)
+   - [GeeksForGeeks](https://www.geeksforgeeks.org/javascript/?ref=shm)
+   - [StackOverflow](https://stackoverflow.com/)
+  
