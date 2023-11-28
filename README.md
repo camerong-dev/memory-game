@@ -4,6 +4,9 @@ Memory Game is a site that tests your memory by viewing cars and attempting to m
 
 ![Am I Responsive image of site](assets/readme-images/am-i-responsive-v2.jpg)
 
+## Grade
+Grade PASS
+
 ## Live Site
 [Memory Game](https://camerong-dev.github.io/memory-game/)
 
